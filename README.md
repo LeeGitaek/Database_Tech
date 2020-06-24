@@ -1,6 +1,27 @@
 # Database_Tech
 Database Management Theory 
 
+Study , Interview / Anomaly 
+============================
+
+##### Anomaly
+- Deletion anomaly : 투플 삭제시 같이 저장된 다른 정보까지 연쇄적으로 삭제되는 현상 -> 연쇄삭제 (triggered deletion) 문제 발생 
+- Insertion anomaly : 투플 삽입 시 특정 속성에 해당하는 값이 없어 NULL 값을 입력해야 하는 현상 -> NULL 값 문제 발생 
+- Update anomaly : 투플 수정 시 중복된 데이터의 일부만 수정되어 데이터의 불일치 문제가 일어나는 현상 -> 불일치 문제 발생 
+
+
+##### Functional Dependancy 
+- 함수 종속성 규칙 (Functional Dependancy Rule)
+  - X, Y, Z가 릴레이션 R에 포함된 속성의 집합이라고 할 때, 함수 종속성에 관한 다음과 같은 규칙이 성립 
+   - 부분집합 규칙 : if Y -> X, then X -> Y
+   - 증가 규칙 : if X -> Y, then XZ -> YZ 
+   - 이행 규칙 : if X -> Y and Y -> Z, then X -> Z
+   
+   - 결합 규칙 : if X -> Y and X -> Z, then X -> YZ
+   - 분해 규칙 : if X -> YZ, then X -> Y and X -> Z
+   - 유사이행 규칙 : if X -> Y and WY -> Z, then WX -> Z
+   
+   
 
 Study , Interview / Transaction
 ====================
